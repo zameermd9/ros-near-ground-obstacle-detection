@@ -1,0 +1,34 @@
+# DepthVoidToFloat
+depth_void_to_float:
+  invalid_depth_value: 0
+
+# GroundHeightFromDepth
+ground_height_from_depth:
+  focal_x_norm: 0.484
+  focal_y_norm: 0.856
+  center_x_norm: 0.495
+  center_y_norm: 0.497
+
+  ransac_iterations: 300
+  inlier_threshold: 0.01
+
+  plane_update_interval: 10
+
+  min_height: 0.07
+  max_height: 0.25
+
+# HeightBinaryMorphology
+height_binary_morphology:
+  floor_noise_margin: 0.04
+  min_area: 100
+
+# MultiFilterContourProcessor
+multi_filter_contour_processor:
+  dilate_count: 2
+  min_frames_confirm: 5
+  strip_width: 100
+  strip_height: 40
+
+# Point Cloud
+mask_to_pointcloud:
+  frame_id: camera_link
